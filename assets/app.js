@@ -1,5 +1,4 @@
 function calculate() {
-	
     var number = document.getElementById("number").value;
     
     if (number == "" || number == 0) {

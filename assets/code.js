@@ -1,12 +1,9 @@
-// calculate age
+
 let daysH = document.getElementById("date");
 let monthH = document.getElementById("month");
 let yearH = document.getElementById("year");
 
 let showAge = document.getElementById("show-age");
-
-
-
 
 const btn = document.getElementById("calc-btn");
 
@@ -27,7 +24,6 @@ btn.addEventListener("click", (days, month, year) => {
         return alert("Please enter your date of birth properly to calculate your age")
     }
 
-    // no else condition needed
 
     console.log(`Current Date : ${d} ${m} ${y}`);
 
@@ -95,7 +91,7 @@ btn.addEventListener("click", (days, month, year) => {
     var ageDays = (maxDays - d) + parseInt(days);
 
 
-    // console.log(typeof days); // string why????
+    
 
     console.log(`Your age is ${ageYears} y , ${ageMonths} m and ${ageDays} d`);
     showAge.innerHTML = `Your age is ${ageYears} y , ${ageMonths} m and ${ageDays} d`;
